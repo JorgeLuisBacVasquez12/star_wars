@@ -37,9 +37,12 @@ body {
   }
   
   .contenedor_lista li:hover {
-    border-bottom: 3px solid yellow;
+    border-bottom: 3px solid #FFE820;
   }
-  
+  .contenedor_lista a {
+    text-decoration: none;
+    color: inherit;
+  }
   .contenedor_star_wars {
     position: absolute;
     top: 228px;
