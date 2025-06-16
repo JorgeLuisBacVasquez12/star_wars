@@ -1,0 +1,38 @@
+body{
+background-image: url(/img/Enmascarar\ grupo\ 1.png);
+}
+
+header {
+    position: relative;
+    top: 58px;
+    width: 100%;
+    height: 24px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  header ol {
+    list-style: none;
+    padding: 0;
+    margin: 0;
+    display: flex;
+    gap: 20px;
+  }
+  
+  header ol li {
+    text-align: center;
+    font: normal normal medium 20px/24px 'Raleway', sans-serif;
+    letter-spacing: 0;
+    color: #FFFFFF;
+    opacity: 0.86;
+    cursor: pointer;
+    transition: color 0.3s ease, border-bottom 0.3s ease;
+    border-bottom: 3px solid transparent; 
+    padding-bottom: 2px; 
+  }
+  
+  header ol li:hover {
+    color: orange;
+    border-bottom: 3px solid yellow; 
+  }
