@@ -19,7 +19,7 @@ body {
     font: normal normal bold 64px/75px 'Raleway', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
-    margin: 0; /* Para que no desborde el contenedor */
+    margin: 0; 
   }
   
   .contenedor_lista {
@@ -59,54 +59,59 @@ body {
     text-decoration: none;
     color: inherit;
   }
- .cajas {
-  position: absolute;
-  top: 408px;
-  left: 140px;
-  width: 398px;
-  height: 211px;
-  background: #27272A;
-  border-radius: 29px;
-  opacity: 1;
-  padding: 20px;
-  box-sizing: border-box;
-  display: flex;
-  flex-direction: column; /* ¡IMPORTANTE! para que h1, p y button se vean uno debajo del otro */
-  justify-content: center;
-  color: white; /* Asegura que el texto sea visible si fondo oscuro */
-}
-
-.cajas h1 {
-    font: normal normal bold 32px/37px 'Raleway', sans-serif;
-    letter-spacing: 0;
+  .contenedor-cajas {
+    position: absolute;
+    top: 408px;
+    left: 140px;
+    width: 1640px;
+    height: 937px;
+    opacity: 1;
+  
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
+    gap: 30px;
+    padding: 20px;
+    box-sizing: border-box;
+    overflow-y: auto;
+  }
+  
+  .cajas {
+    position: relative;
+    left: -20px; 
+    width: 398px;
+    height: 211px;
+    background: #27272A 0% 0% no-repeat padding-box;
+    border-radius: 29px;
+    opacity: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    padding: 20px;
     color: #FFFFFF;
-    opacity: 0.86;
+    box-sizing: border-box;
+  }
+  
+  
+  .cajas h1 {
+    font: normal normal bold 32px/36px 'Raleway', sans-serif;
     margin: 0 0 10px 0;
   }
-
+  
   .cajas p {
-    font: normal normal normal 16px/19px 'Raleway', sans-serif;
-    letter-spacing: 0px;
-    color: #FFFFFF;
-    opacity: 0.86;
-    margin: 0 0 10px 0; 
-    text-align: left;
+    font: 16px 'Raleway', sans-serif;
+    margin: 0 0 20px 0;
   }
   
   .cajas button {
     width: 156px;
     height: 41px;
-    background: #D6B402;
-    border: none;
+    background: #D6B402 0% 0% no-repeat padding-box;
     border-radius: 21px;
     opacity: 1;
-    color: #000;
-    font: normal normal medium 16px/19px 'Raleway', sans-serif;
+    border: none;
     cursor: pointer;
-    transition:0.3s ease;
-  }
-  
-  .cajas button:hover {
-    background: #bda101; 
+    font-family: 'Raleway', sans-serif;
+    font-weight: bold;
+    color: #000000;
   }
   
