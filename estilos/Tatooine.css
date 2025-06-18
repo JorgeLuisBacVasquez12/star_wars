@@ -76,7 +76,7 @@ body {
     width: 1171px;
     display: flex;
     flex-wrap: wrap;
-    gap: 2px; 
+    gap: 0px; 
     box-sizing: border-box;
   }
   
@@ -84,7 +84,7 @@ body {
     width: 205px; 
     height: 130px;
     opacity: 1;
-    padding: 16px;
+    padding: 15px;
     color: #fff;
     font-family: 'Raleway', sans-serif;
     display: flex;
@@ -101,12 +101,8 @@ body {
     font: normal normal normal 24px/29px 'Raleway', sans-serif;
     letter-spacing: 0px;
     color: #FFFFFF;
-    opacity: 0.86;
+    opacity: 0.96;
     margin: 0 0 10px 0; 
   }
 
-  p{
-   color:  #FFFFFF;
-   font: normal normal normal 24px/29px Raleway;
-   opacity: 0.86;
-  }
+ 
